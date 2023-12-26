@@ -1,60 +1,35 @@
-# Canadian Labor Force Analysis
+# Labor Force Analysis Project
 
-An analysis of the Canadian labor force dataset, examining gender distribution, employment types, and age demographics.
+## Overview
 
-## Table of Contents
+This repository contains the code and analysis for exploring labor force dynamics in Canada based on the Statistics Canada dataset. The project investigates the relationships between age, gender, and labor force status, providing insights into employment patterns across various geographical levels.
 
-- [About](#about)
-- [Dataset](#dataset)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Machine Learning Models](#machine-learning-models)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+## Table Information
 
-## About
+- **Table Name:** Labour force status by age and gender: Canada, provinces and territories, census divisions and census subdivisions
+- **Table Code:** 98-10-0485-01
+- **Release Date:** November 15, 2023
+- **Geography:** Canada, Province or territory, Census division, Census subdivision
+- **Universe:** Population aged 15 years and over in private households, 2021 Census — 25% Sample data
+- **Variables:** Age (15A), Labour force status (8), Gender (3)
 
-Provide a brief introduction to the project. What motivated the analysis of the Canadian labor force dataset? What are the main goals or objectives?
+## Code Structure
 
-## Dataset
-
-Briefly describe the dataset used in the project. Include information on the columns, data types, and any preprocessing steps performed.
+The project includes Python scripts (`LaborForceAnalysis.ipynb`) for data preprocessing, exploration, and clustering. Libraries such as pandas, NumPy, scikit-learn, seaborn, and matplotlib are used. The clustering approach involves KMeans for numerical features and KPrototypes for a combination of numerical and categorical features.
 
 ## Getting Started
 
-### Prerequisites
+1. Install the required libraries: `pip install pandas numpy scikit-learn seaborn matplotlib kmodes`
+2. Run the Jupyter notebook `LaborForceAnalysis.ipynb` for step-by-step analysis.
 
-Specify any prerequisites or dependencies required to run the project. For example, mention the libraries and tools needed.
+## File Descriptions
 
-### Installation
+- `LaborForceAnalysis.ipynb`: Jupyter notebook containing the project code.
+- `Data/`: Directory containing the dataset and any intermediate data files.
 
-Provide step-by-step instructions for installing and setting up the project. Include any commands or configurations necessary.
+## Citation
 
-## Exploratory Data Analysis
+- **Statistics Canada Table:** [Labour force status by age and gender: Canada, provinces and territories, census divisions and census subdivisions](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810048501)
+- **DOI:** [https://doi.org/10.25318/9810048501-eng](https://doi.org/10.25318/9810048501-eng)
 
-Explain the exploratory data analysis (EDA) performed on the dataset. Highlight key insights, visualizations, and trends discovered during the analysis.
-
-## Machine Learning Models
-
-Describe any machine learning models applied to the dataset. Include details on preprocessing steps, feature engineering, and model evaluation.
-
-## Results
-
-Summarize the results obtained from the analysis and machine learning models. Highlight any interesting findings or patterns.
-
-## Contributing
-
-Provide guidelines on how others can contribute to the project. Include information on submitting bug reports, feature requests, or pull requests.
-
-## License
-
-Specify the license under which your project is released. Include a link to the actual license file (e.g., [MIT License](LICENSE)).
-
-## Acknowledgments
-
-Give credit to any external sources, libraries, or datasets that contributed to the project.
-
+Feel free to explore and adapt the code to gain insights into the labor force landscape in Canada.
